@@ -1,39 +1,7 @@
-@font-face {
-    font-family: 'Circular Std';
-    src: url('CircularStd-Black.woff2') format('woff2'),
-        url('CircularStd-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'Circular Std';
-    src: url('fonts/CircularStd-Bold.woff2') format('woff2'),
-        url('fonts/CircularStd-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Circular Std';
-    src: url('fonts/CircularStd-Medium.woff2') format('woff2'),
-        url('fonts/CircularStd-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Circular Std Book';
-    src: url('fonts/CircularStd-Book.woff2') format('woff2'),
-        url('fonts/CircularStd-Book.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 :root {
-    --clr-navigation-text: rgba(17, 17, 17, 1);
-    --clr-navigation-underline: rgba(233, 233, 233, 1);
-    --clr-navigation-underline-active: rgba(233, 233, 233, 0.5);
+    --clr-highlight: rgba(239, 0, 49, 1);
     --font-size: 100%; /* 16px */
     --ratio: 1.333;
 
@@ -47,14 +15,14 @@
     --media-small: calc(40*16 * 1rem);
     --media-massive: calc(400*16 *1rem);
 
-    --font-family: "Circular Std", Arial, Helvetica, sans-serif;
+    --font-family: Arial, Helvetica, sans-serif;
 
 }
 
 body {
     font: var(--font-size) var(--font-family);
-    width: calc(100vw - 10rem);
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -64,29 +32,7 @@ ul {
 
 }
 
-
-/* Potfolio Grid */
-
-.portfolio__grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: auto;
-    grid-column-gap: 5vw;
-    grid-row-gap: 1rem;
-    justify-items: stretch;
-    align-items: stretch;
-  
+.wrapper {
+    width: calc(100vw - 10rem);
     margin: 0 auto;
- }
-
-.portfolio__grid--item--one {
-    grid-column: span 3;
-}
-
-.portfolio__grid--item--two {
-    grid-column: span 2;
-}
-
-.portfolio__grid--item--three {
-    grid-column: span 3;
 }
