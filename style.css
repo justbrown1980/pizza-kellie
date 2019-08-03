@@ -2,6 +2,9 @@
 
 :root {
     --clr-highlight: rgba(239, 0, 49, 1);
+    --clr-dark-bg: rgba(0, 0, 0, 1);
+
+
     --font-size: 100%; /* 16px */
     --ratio: 1.333;
 
