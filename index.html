@@ -137,16 +137,33 @@
 
             <div role="tablist">
 
-                <input type="radio" class=state" title="All" name="category-state" id="" role="tab" aria-controls="all-panel" aria-selected="true" checked />
+                <input type="radio" class=state" title="All" name="category-state" id="All" role="tab" aria-controls="all-panel" aria-selected="true" checked />
+                <input type="radio" class="state" title="Pizza" name="category-state" id="pizza" role="tab" aria-controls="pizza-panel" />
+                <input type="radio" class="state" title="Pasta" name="category-state" id="pasta" role="tab" aria-controls="pasta-panel" />
+                <input type="radio" class="state" title="Pides" name="category-state" id="pide" role="tab" aria-controls="pide-panel" />
+                <input type="radio" class="state" title="Salads" name="category-state" id="salad" role="tab" aria-controls="salad-panel" />
+                <input type="radio" class="state" title="Kebabs" name="category-state" id="kebab" role="tab" aria-controls="kebab-panel" />
+                <input type="radio" class="state" title="Dessert" name="category-state" id="dessert" role="tab" aria-controls="dessert-panel" />
 
                 <div class="tabs" aria-hidden="true">
-                    <label for="all" id="all-tab" class="tab" aria-selected="true"></label>
+                    <label for="all" id="all-tab" class="tab" aria-selected="true">all</label>
+                    <label for="pizza" id="pizza-tab" class="tab">pizza</label>
+                    <label for="pasta" id="pasta-tab" class="tab">pasta</label>
+                    <label for="pide" id="pides-tab" class="tab">pide</label>
+                    <label for="salad" id="salad-tab" class="tab">salad</label>
+                    <label for="kebab" id="all-tab" class="tab">kebab</label>
+                    <label for="dessert" id="dessert-tab" class="tab"></label>
+                </div>
+
+                <div class="panels">
+                    
+                    <ul id="all-panel" class="panel active" role="tabpanel" aria-labelledby="all-tab">
+                        <li>ITEMS</li>
+                    </ul>    
+
+                    
                 </div>
             </div>
-
-
-
-
 
         </div><!-- / wrapper-->
     </section><!-- / menu tabs-->
