@@ -135,38 +135,60 @@
 
             <h2>our menu</h3>
 
-            <div role="tablist">
-
-                <input type="radio" class=state" title="All" name="category-state" id="All" role="tab" aria-controls="all-panel" aria-selected="true" checked />
-                <input type="radio" class="state" title="Pizza" name="category-state" id="pizza" role="tab" aria-controls="pizza-panel" />
-                <input type="radio" class="state" title="Pasta" name="category-state" id="pasta" role="tab" aria-controls="pasta-panel" />
-                <input type="radio" class="state" title="Pides" name="category-state" id="pide" role="tab" aria-controls="pide-panel" />
-                <input type="radio" class="state" title="Salads" name="category-state" id="salad" role="tab" aria-controls="salad-panel" />
-                <input type="radio" class="state" title="Kebabs" name="category-state" id="kebab" role="tab" aria-controls="kebab-panel" />
-                <input type="radio" class="state" title="Dessert" name="category-state" id="dessert" role="tab" aria-controls="dessert-panel" />
-
-                <div class="tabs" aria-hidden="true">
-                    <label for="all" id="all-tab" class="tab" aria-selected="true">all</label>
-                    <label for="pizza" id="pizza-tab" class="tab">pizza</label>
-                    <label for="pasta" id="pasta-tab" class="tab">pasta</label>
-                    <label for="pide" id="pides-tab" class="tab">pide</label>
-                    <label for="salad" id="salad-tab" class="tab">salad</label>
-                    <label for="kebab" id="all-tab" class="tab">kebab</label>
-                    <label for="dessert" id="dessert-tab" class="tab"></label>
-                </div>
-
-                <div class="panels">
+                <div class="tabbed">
+                    <input type="radio" id="tab1" name="css-tabs" checked>
+                    <input type="radio" id="tab2" name="css-tabs">
+                    <input type="radio" id="tab3" name="css-tabs">
+                    <input type="radio" id="tab4" name="css-tabs">
+                    <input type="radio" id="tab5" name="css-tabs">
+                    <input type="radio" id="tab6" name="css-tabs">
                     
-                    <ul id="all-panel" class="panel active" role="tabpanel" aria-labelledby="all-tab">
-                        <li>ITEMS</li>
-                    </ul>    
-
+                    <ul class="tabs">
+                        <li class="tab"><label for="tab1">Pizza</label></li>
+                        <li class="tab"><label for="tab2">Pasta</label></li>
+                        <li class="tab"><label for="tab3">Pides</label></li>
+                        <li class="tab"><label for="tab4">Salads</label></li>
+                        <li class="tab"><label for="tab5">Kebabs</label></li>
+                        <li class="tab"><label for="tab6">Desserts</label></li>
+                    </ul>
                     
-                </div>
+                    <div class="tab-content">
+                        <h4>Pizza</h4>
+                        <p>Da bomb ipsizzle dolizzle sit amizzle, consectetuer adipiscing fo shizzle. Nullam yo velizzle, aliquet volutpizzle, fo shizzle yippiyo, for sure vizzle, arcu. Black eget fo shizzle. Sizzle erizzle. Rizzle at dolizzle dapibizzle turpis tempizzle izzle. </p>
+                    </div>
+                    
+                    <div class="tab-content">
+                        <h4>Pasta</h4>
+                        <p>Zombie ipsum brains reversus ab cerebellum viral inferno, brein nam rick mend grimes malum cerveau cerebro. De carne cerebro lumbering animata cervello corpora quaeritis. </p>
+                    </div>
+                    
+                    <div class="tab-content">
+                        <h4>Pides</h4>
+                        <p>Our conversations with other pilgrims have led to an awakening of pseudo-astral consciousness. Who are we? Where on the great myth will we be re-energized? We are at a crossroads of complexity and stagnation.</p>
+                    </div>
+
+                    <div class="tab-content">
+                        <h4>Salads</h4>
+                        <p>Zombie ipsum brains reversus ab cerebellum viral inferno, brein nam rick mend grimes malum cerveau cerebro. De carne cerebro lumbering animata cervello corpora quaeritis. Summus thalamus brains sit​​, morbo basal ganglia vel maleficia? De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. </p>
+                    </div>
+
+                    <div class="tab-content">
+                        <h4>Kebabs</h4>
+                        <p>Kebabs ipsum brains reversus ab cerebellum viral inferno, brein nam rick mend grimes malum cerveau cerebro. De carne cerebro lumbering animata cervello corpora quaeritis. Summus thalamus brains sit​​, morbo basal ganglia vel maleficia? De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. </p>
+                    </div>
+
+                    <div class="tab-content">
+                        <h4>Desserts</h4>
+                        <p>Kebabs ipsum brains reversus ab cerebellum viral inferno, brein nam rick mend grimes malum cerveau cerebro. De carne cerebro lumbering animata cervello corpora quaeritis. Summus thalamus brains sit​​, morbo basal ganglia vel maleficia? De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. </p>
+                    </div>
+                        
+                </div><!-- / tabbed -->
+                
             </div>
 
         </div><!-- / wrapper-->
     </section><!-- / menu tabs-->
+
 
 </body>
 </html>
