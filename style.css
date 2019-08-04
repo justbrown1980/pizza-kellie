@@ -15,12 +15,16 @@
     --h2: calc(var(--h3)*var(--ratio));
     --h1: calc(var(--h2)*var(--ratio));
 
-    --media-small: calc(40*16 * 1rem);
+    --media-small: 10rem;
     --media-massive: calc(400*16 *1rem);
 
     --font-family: Arial, Helvetica, sans-serif;
 
 }
+
+h2 {font-size: var(--h2);}
+h3 {font-size: var(--h3);}
+h4 {font-size: var(--h4);}
 
 body {
     font: var(--font-size) var(--font-family);
@@ -35,10 +39,63 @@ ul {
 
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 .wrapper {
     width: calc(100vw - 10rem);
     margin: 0 auto;
 }
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    padding: 1rem 1.5rem; 
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn__secondary {
+    color: var(--clr-highlight);
+    border: 1px solid var(--clr-highlight);
+}
+
+/* Specials */
+@media (min-width: 400px) {
+    .specials__grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+}
+
+.specials__grid > div {
+    border: 1px solid red;
+}
+
+.specials img {
+    margin: 0 auto;
+}
+
+.specials .price {
+    font-size: var(--h4);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.specials__title {
+    text-align: center;
+}
+
+
+/* Menu Tabs */
 
 .tabbed {
 	overflow-x: hidden; /* so we could easily hide the radio inputs */
