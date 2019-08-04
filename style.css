@@ -1,10 +1,18 @@
+@font-face {
+    font-family: 'beyond_the_mountainsregular';
+    src: url('fonts/beyond_the_mountains-webfont.woff2') format('woff2'),
+         url('fonts/beyond_the_mountains-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 :root {
     --clr-highlight: rgba(239, 0, 49, 1);
     --clr-dark-bg: rgba(0, 0, 0, 1);
+    --clr-light-text: rgba(255, 255, 255, 1);
 
-
+    --font-size--small: 60%;
     --font-size: 100%; /* 16px */
     --ratio: 1.333;
 
@@ -13,7 +21,7 @@
     --h4: calc(var(--font-size)*var(--ratio));
     --h3: calc(var(--h4)*var(--ratio));
     --h2: calc(var(--h3)*var(--ratio));
-    --h1: calc(var(--h2)*var(--ratio));
+    --h1: calc(var(--h2)*var(--ratio)*2);
 
     --media-small: 10rem;
     --media-massive: calc(400*16 *1rem);
@@ -21,15 +29,30 @@
     --font-family: Arial, Helvetica, sans-serif;
 
 }
-
-h2 {font-size: var(--h2);}
+h1 {
+    font-family: 'beyond_the_mountainsregular', sans-serif;
+    font-size: var(--h1);
+    text-align: center;
+    margin-top: 0;
+}
+h2 {
+    font-family: 'beyond_the_mountainsregular', sans-serif;
+    font-size: var(--h2);
+    text-align: center;
+}
 h3 {font-size: var(--h3);}
 h4 {font-size: var(--h4);}
 
+
 body {
-    font: var(--font-size) var(--font-family);
+    font-family: var(--font-family);
+    font-size: var(--font-size--small);
     margin: 0;
     padding: 0;
+}
+
+@media screen and (min-width: 400px) {
+    body{font-size: var(--font-size);}
 }
 
 ul {
@@ -49,6 +72,15 @@ img {
     margin: 0 auto;
 }
 
+/* Logo */
+
+.logo {
+    background: url(../images/logo-white.png) 0 0 no-repeat;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 /* Buttons */
 
 .btn {
@@ -61,16 +93,33 @@ img {
 }
 
 .btn__secondary {
-    color: var(--clr-highlight);
+    background-color: var(--clr-highlight);
+    color: var(--clr-light-text);
     border: 1px solid var(--clr-highlight);
 }
 
+/* Header */
+[role="banner"] {
+    background-color: var(--clr-dark-bg);
+}
+
+
+/* Byline above main head */
+.byline {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--clr-light-text);
+}
+
 /* Specials */
+
 @media (min-width: 400px) {
     .specials__grid {
         display: grid;
         grid-template-columns: repeat(4, minmax(200px, 1fr));
-        grid-template-rows: 1fr 1fr;
+        grid-auto-rows: 1fr 1fr;
         grid-gap: 2rem 1rem;
     }
 }
@@ -120,7 +169,7 @@ img {
     margin: 0 1.5vw -1px 1.5vw;
 	padding: 1.2vw 1.5vw;
 	color: #666;
-	font-size: 12px; 
+	font-size: var(--font-size); 
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -159,20 +208,3 @@ img {
 	display: block;
 }
 
-/* Triangle borders */
-
-.triangle-border:after {
-    content: " ";
-    display: block;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 36px;
-    background: linear-gradient(#2B3A48 0%, transparent 0%), linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
-    background: -webkit-linear-gradient(#2B3A48 0%, transparent 0%), -webkit-linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 -webkit-linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
-    background: -o-linear-gradient(#2B3A48 0%, transparent 0%), -o-linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 -o-linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
-    background: -moz-linear-gradient(#2B3A48 0%, transparent 0%), -moz-linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 -moz-linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
-    background-repeat: repeat-x;
-    background-size: 0px 100%, 9px 27px, 9px 27px;
-}
