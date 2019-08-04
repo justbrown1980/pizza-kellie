@@ -71,12 +71,12 @@ img {
         display: grid;
         grid-template-columns: repeat(4, minmax(200px, 1fr));
         grid-template-rows: 1fr 1fr;
-        grid-gap: 1rem;
+        grid-gap: 2rem 1rem;
     }
 }
 
 .specials__grid > div {
-    border: 1px solid red;
+    text-align: center;
 }
 
 .specials img {
