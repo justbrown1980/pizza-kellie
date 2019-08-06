@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
 @font-face {
     font-family: 'beyond_the_mountainsregular';
     src: url('fonts/beyond_the_mountains-webfont.woff2') format('woff2'),
          url('fonts/beyond_the_mountains-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 :root {
@@ -16,7 +17,6 @@
     --font-size--small: 60%;
     --font-size: 100%; /* 16px */
     --ratio: 1.333;
-
     
     --p:  var(--font-size);
     --h4: calc(var(--font-size)*var(--ratio));
@@ -24,17 +24,17 @@
     --h2: calc(var(--h3)*var(--ratio));
     --h1: calc(var(--h2)*var(--ratio)*2);
 
-    --media-small: 10rem;
-    --media-massive: calc(400*16 *1rem);
+    --media-small: 50vw;
+    --media-large: 100vw;
 
-    --font-family: Arial, Helvetica, sans-serif;
+    --font-family: "Open Sans", Arial, Helvetica, sans-serif;
 
 }
 h1 {
     font-family: 'beyond_the_mountainsregular', sans-serif;
     font-size: var(--h1);
     text-align: center;
-    margin-bottom: 0;
+    margin: 0;
 }
 h2 {
     font-family: 'beyond_the_mountainsregular', sans-serif;
@@ -48,6 +48,7 @@ h4 {font-size: var(--h4);}
 body {
     font-family: var(--font-family);
     font-size: var(--font-size--small);
+    font-weight: 400;
     margin: 0;
     padding: 0;
 }
@@ -69,7 +70,7 @@ img {
 }
 
 .wrapper {
-    max-width: calc(100vw - 10rem);
+    max-width: calc(var(--media-large) - 10rem);
     margin: 0 auto;
 }
 
@@ -92,16 +93,20 @@ img {
     font-weight: 700;
 }
 
+.btn__outline {
+    border: 0.1rem solid rgba(255, 255, 255, 1); 
+}
+
 .btn__primary {
     background-color: var(--clr-highlight);
     color: var(--clr-light-text);
-    transition: 0.5s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 
 .btn__primary:hover {
     background-color: var(--clr-highlight);
     color: var(--clr-dark-text);
-    transition: 0.5s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 
 
@@ -116,26 +121,61 @@ img {
 
 
 /* Header */
-[role="banner"] {
+header[role="banner"] {
     background-color: var(--clr-highlight);
     color: var(--clr-light-text);
+
+    padding: 2vh 0;
+}
+
+[role="banner"] > .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+
+    max-width: calc(var(--media-large) - 20rem);
 }
 
 /* Navigation */
 
+nav ul {
+    display: block;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 15px;
+}
+
 nav a {
+    font-family: var(--font-family);
     color: var(--clr-light-text);
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    font-size: 0.9rem;
 }
 
 nav a:hover {
     color: rgba(var(--clr-light-text), 0.5);
     text-decoration: none;
+
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 1);
+
+    padding-bottom: 0.5rem;
 }
 
 /* Banner Area */
 [role="complementary"] {
-    background: rgba(0, 0, 0 0, 0.5) url(../images/pizza-bg-opt.jpg) center center no-repeat;
+    background: #000 url(../images/pizza-bg-opt.jpg) no-repeat;
+    background-size: cover;
+
+    color: var(--clr-light-text);
+
+    padding: 20vh 0;
 }
 
 /* Byline above main head */
@@ -145,6 +185,8 @@ nav a:hover {
     text-transform: uppercase;
 
     color: var(--clr-light-text);
+
+    margin: 0;
 }
 
 
@@ -152,7 +194,7 @@ nav a:hover {
 /* Specials */
 
 .specials > .wrapper {
-    max-width: calc(100vw - 10rem);
+    max-width: calc(var(--media-large) - 10rem);
 } 
 
 @media (min-width: 400px) {
