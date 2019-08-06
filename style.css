@@ -11,6 +11,7 @@
     --clr-highlight: rgba(239, 0, 49, 1);
     --clr-dark-bg: rgba(0, 0, 0, 1);
     --clr-light-text: rgba(255, 255, 255, 1);
+    --clr-dark-text: rgba(0, 0, 0, 1);
 
     --font-size--small: 60%;
     --font-size: 100%; /* 16px */
@@ -33,7 +34,7 @@ h1 {
     font-family: 'beyond_the_mountainsregular', sans-serif;
     font-size: var(--h1);
     text-align: center;
-    margin-top: 0;
+    margin-bottom: 0;
 }
 h2 {
     font-family: 'beyond_the_mountainsregular', sans-serif;
@@ -72,14 +73,13 @@ img {
     margin: 0 auto;
 }
 
-/* Logo */
+/* Utility Clases */
 
-.logo {
-    background: url(../images/logo-white.png) 0 0 no-repeat;
-    width: 100%;
-    height: 100%;
-    display: block;
+.center {
+    text-align: center;
+    margin: 0 auto;
 }
+
 
 /* Buttons */
 
@@ -92,17 +92,51 @@ img {
     font-weight: 700;
 }
 
-.btn__secondary {
+.btn__primary {
     background-color: var(--clr-highlight);
     color: var(--clr-light-text);
+    transition: 0.5s ease-in-out;
+}
+
+.btn__primary:hover {
+    background-color: var(--clr-highlight);
+    color: var(--clr-dark-text);
+    transition: 0.5s ease-in-out;
+}
+
+
+.btn__secondary {
+    background-color: var(--clr-highlight);
+    color: var(--clr-dark-text);
     border: 1px solid var(--clr-highlight);
 }
 
+
+
+
+
 /* Header */
 [role="banner"] {
-    background-color: var(--clr-dark-bg);
+    background-color: var(--clr-highlight);
+    color: var(--clr-light-text);
 }
 
+/* Navigation */
+
+nav a {
+    color: var(--clr-light-text);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgba(var(--clr-light-text), 0.5);
+    text-decoration: none;
+}
+
+/* Banner Area */
+[role="complementary"] {
+    background: rgba(0, 0, 0 0, 0.5) url(../images/pizza-bg-opt.jpg) center center no-repeat;
+}
 
 /* Byline above main head */
 .byline {
@@ -112,6 +146,8 @@ img {
 
     color: var(--clr-light-text);
 }
+
+
 
 /* Specials */
 
