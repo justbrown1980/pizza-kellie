@@ -47,6 +47,12 @@ h1 {
     width: 100%;
 }
 
+@media (max-width: 500px) {
+    h1 span {
+        display: block;
+    }
+}
+
 
 h1 span {
     margin: 0 2rem;
@@ -284,6 +290,14 @@ nav a:hover {
 	list-style: none;
     padding: 0;
     border-bottom: 0.25rem solid var(--clr-highlight);
+
+    font-size: calc(--font-size--small * 16px);
+}
+
+@media (max-width: 500px) {
+    .tabs {
+        font-size: calc(--font-size * 12px);
+    }
 }
 .tab > label {
     display: block;
