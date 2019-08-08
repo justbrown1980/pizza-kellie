@@ -60,6 +60,12 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+@media (max-width: 500px) {
+    body {
+        font-size: 18px;
+    }
+}
+
 
 address {
     font-style: normal;
