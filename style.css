@@ -37,6 +37,14 @@ h1 {
     margin: 0;
 }
 
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1rem;
+    }
+}
+
+
+
 h1 span {
     margin: 0 2rem;
 }
@@ -134,7 +142,14 @@ header[role="banner"] {
     color: var(--clr-light-text);
 
     padding: 2vh 0;
+
+    text-align: center;
+    display: block;
+
 }
+
+
+
 @media (min-width: 400px) {
     [role="banner"] > .wrapper {
         display: grid;
