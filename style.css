@@ -135,13 +135,14 @@ header[role="banner"] {
 
     padding: 2vh 0;
 }
+@media (min-width: 400px) {
+    [role="banner"] > .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
 
-[role="banner"] > .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    align-items: center;
-
-    max-width: var(--media-large);
+        max-width: var(--media-large);
+    }
 }
 
 /* Navigation */
