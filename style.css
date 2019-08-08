@@ -9,7 +9,7 @@
 }
 
 :root {
-    --clr-highlight: rgba(239, 0, 49, 1);
+    --clr-highlight: #eb1c25;
     --clr-dark-bg: rgba(0, 0, 0, 1);
     --clr-light-text: rgba(255, 255, 255, 1);
     --clr-dark-text: rgba(0, 0, 0, 1);
@@ -36,6 +36,10 @@ h1 {
     text-align: center;
     margin: 0;
 }
+
+h1 span {
+    margin: 0 2rem;
+}
 h2 {
     font-family: 'beyond_the_mountainsregular', sans-serif;
     font-size: var(--h2);
@@ -51,6 +55,7 @@ body {
     font-weight: 400;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 @media (min-width: 400px) {
@@ -70,7 +75,7 @@ img {
 }
 
 .wrapper {
-    max-width: calc(var(--media-large) - 10rem);
+    max-width: var(--media-large);
     margin: 0 auto;
 }
 
@@ -94,6 +99,8 @@ img {
 }
 
 .btn__outline {
+    background-color: var(--clr-highlight);
+    color: var(--clr-light-text);
     border: 0.1rem solid rgba(255, 255, 255, 1); 
 }
 
@@ -112,7 +119,8 @@ img {
 
 .btn__secondary {
     background-color: var(--clr-highlight);
-    color: var(--clr-dark-text);
+    display: block;
+    color: var(--clr-light-text);
     border: 1px solid var(--clr-highlight);
 }
 
