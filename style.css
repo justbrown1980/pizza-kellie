@@ -24,7 +24,7 @@
     --h2: calc(var(--h3)*var(--ratio));
     --h1: calc(var(--h2)*var(--ratio)*2);
 
-    --media-small: 50vw;
+    --media-small: 600px;
     --media-large: 100vw;
 
     --font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -38,13 +38,6 @@ h1 {
 
     width: 100%;
 }
-
-@media (max-width: 400px) {
-    h1 {
-        font-size: 3rem;
-    }
-}
-
 
 
 h1 span {
@@ -85,7 +78,6 @@ img {
 }
 
 .wrapper {
-    max-width: var(--media-large);
     margin: 0 auto;
 }
 
@@ -102,7 +94,7 @@ img {
 .btn {
     display: inline-block;
     padding: 1rem 1.5rem; 
-    margin: 1rem;
+    margin: 1rem auto;
     text-align: center;
     text-decoration: none;
     font-weight: 700;
@@ -118,8 +110,6 @@ img {
     background-color: var(--clr-highlight);
     color: var(--clr-light-text);
     transition: all 0.25s ease-in-out;
-    margin: 0 auto;
-
     text-align: center;
 }
 
@@ -134,7 +124,7 @@ img {
     background-color: var(--clr-highlight);
     display: block;
     color: var(--clr-light-text);
-    border: 1px solid var(--clr-highlight);
+    border: 0.1rem solid var(--clr-highlight);
 }
 
 .btn__secondary:hover {
@@ -159,16 +149,9 @@ header[role="banner"] {
 
 }
 
-
-
-@media (min-width: 400px) {
-    [role="banner"] > .wrapper {
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        align-items: center;
-
-        max-width: var(--media-large);
-    }
+.logo img {
+    display: inline-block;
+    margin: 0 auto 1rem auto;
 }
 
 /* Navigation */
@@ -231,17 +214,16 @@ nav a:hover {
 /* Specials */
 
 .specials > .wrapper {
-    max-width: var(--media-large);
     text-align: center;
 } 
 
-@media (min-width: 400px) {
+/* @media (min-width: 400px) {
     .specials__grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         grid-gap: 2rem 1rem;
     }
-}
+} */
 
 .specials__grid > div {
     text-align: center;
@@ -265,10 +247,13 @@ nav a:hover {
 
 /* Menu Tabs */
 
+
 .tabbed {
 	overflow-x: hidden; /* so we could easily hide the radio inputs */
 	margin: 32px 0;
-	padding-bottom: 16px;
+    padding-bottom: 16px;
+    
+    margin: 0 1rem;
 }
 
 .tabbed [type="radio"] {
@@ -302,7 +287,7 @@ nav a:hover {
 
 .tab-content {
 	display: none;
-	color: #777;
+    color: #777;
 }
 
 /* As we cannot replace the numbers with variables or calls to element properties, the number of this selector parts is our tab count limit */
@@ -327,3 +312,64 @@ nav a:hover {
 	display: block;
 }
 
+/* Items in Menu */
+
+.tabbed__title {
+    text-align: center;
+}
+
+.tabbed__wrapper {
+    margin: 2vh 0 0;
+    width: 100vw;
+}
+
+/* @media (min-width: 600px) {
+    .tabbed__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 2rem;
+
+        width: calc(100vw - 40vw);
+        margin: 2vh auto 0 auto;
+    }
+} */
+
+
+.tabbed__prices {
+   text-align: center;
+
+   margin: 5vh auto 1vh auto;
+}
+
+.tabbed__prices > li {
+    display: inline-block;
+    margin-right: 5vw;
+}
+
+.tabbed__prices strong {
+    font-weight: 700;
+    color: var(--clr-highlight);
+    margin-right: 1vw;
+}
+
+.tabbed__item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    padding: 1rem;
+    text-align: left;
+}
+.tabbed__item img {
+    align-self: start;
+    max-width: 100%;
+}
+
+.tabbed__item > div {
+    vertical-align: top;
+}
+.tabbed__item h4 {
+    font-weight: 500;
+    margin: 0 0 0.5rem 0;
+}
+  
