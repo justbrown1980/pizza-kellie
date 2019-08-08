@@ -35,11 +35,13 @@ h1 {
     font-size: var(--h1);
     text-align: center;
     margin: 0;
+
+    width: 100%;
 }
 
 @media (max-width: 400px) {
     h1 {
-        font-size: 1rem;
+        font-size: 3rem;
     }
 }
 
@@ -100,7 +102,7 @@ img {
 .btn {
     display: inline-block;
     padding: 1rem 1.5rem; 
-    margin: 0 auto;
+    margin: 1rem auto;
     text-align: center;
     text-decoration: none;
     font-weight: 700;
@@ -116,6 +118,9 @@ img {
     background-color: var(--clr-highlight);
     color: var(--clr-light-text);
     transition: all 0.25s ease-in-out;
+    margin: 0 auto;
+
+    text-align: center;
 }
 
 .btn__primary:hover {
@@ -130,6 +135,12 @@ img {
     display: block;
     color: var(--clr-light-text);
     border: 1px solid var(--clr-highlight);
+}
+
+.btn__secondary:hover {
+    background-color: var(--clr-highlight);
+    color: var(--clr-dark-text);
+    transition: all 0.25s ease-in-out;
 }
 
 
@@ -200,6 +211,8 @@ nav a:hover {
     color: var(--clr-light-text);
 
     padding: 20vh 0;
+
+    word-wrap: break-word; 
 }
 
 /* Byline above main head */
@@ -218,7 +231,8 @@ nav a:hover {
 /* Specials */
 
 .specials > .wrapper {
-    max-width: calc(var(--media-large) - 10rem);
+    max-width: var(--media-large);
+    text-align: center;
 } 
 
 @media (min-width: 400px) {
