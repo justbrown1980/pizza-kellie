@@ -141,7 +141,7 @@ header[role="banner"] {
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
 
-    max-width: calc(var(--media-large) - 20rem);
+    max-width: var(--media-large);
 }
 
 /* Navigation */
