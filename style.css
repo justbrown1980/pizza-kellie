@@ -294,9 +294,10 @@ nav a:hover {
     font-size: calc(--font-size--small * 16px);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .tabs {
-        font-size: calc(--font-size * 12px);
+        display: block;
+        font-size: 14px;
     }
 }
 .tab > label {
