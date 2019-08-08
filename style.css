@@ -30,6 +30,14 @@
     --font-family: "Open Sans", Arial, Helvetica, sans-serif;
 
 }
+
+@media (max-width: 500px) {
+    :root {
+        --ratio: 1.1;
+    }
+}
+
+
 h1 {
     font-family: 'beyond_the_mountainsregular', sans-serif;
     font-size: var(--h1);
