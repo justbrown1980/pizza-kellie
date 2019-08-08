@@ -61,6 +61,9 @@ body {
     overflow-x: hidden;
 }
 
+address {
+    font-style: normal;
+} 
 @media (min-width: 400px) {
     body{font-size: var(--font-size);}
 }
@@ -372,4 +375,20 @@ nav a:hover {
     font-weight: 500;
     margin: 0 0 0.5rem 0;
 }
-  
+
+
+footer {
+    background-color: var(--clr-highlight);
+    padding: 5vh 0;
+
+    color: var(--clr-light-text);
+}
+
+footer address strong,
+aside p strong {
+    font-weight: 700;
+    display: block;
+    text-decoration: underline;
+
+    margin-bottom: 1rem;
+}
