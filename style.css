@@ -84,6 +84,7 @@ img {
 /* Utility Clases */
 
 .center {
+    display: inline-block;
     text-align: center;
     margin: 0 auto;
 }
@@ -372,4 +373,10 @@ nav a:hover {
     font-weight: 500;
     margin: 0 0 0.5rem 0;
 }
-  
+
+
+/* Footer Logo */
+
+.footer-logo picture {
+    display: inline-block;
+}
