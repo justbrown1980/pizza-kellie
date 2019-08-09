@@ -76,6 +76,14 @@ h3 {font-size: var(--h3);}
 h4 {font-size: var(--h4);}
 
 
+/* Try Dark Color Scheme */
+body {
+    background-color: var(--clr-dark-bg);
+    color: var(--clr-light-text);
+}
+
+
+
 body {
     font-family: var(--font-family);
     font-size: var(--font-size--small);
@@ -111,7 +119,7 @@ img {
 }
 
 .wrapper {
-    margin: 0 auto;
+    margin: 9vh auto;
 }
 
 /* Utility Clases */
@@ -299,7 +307,6 @@ nav a:hover {
 
 /* Menu Tabs */
 
-
 .tabbed {
 	overflow-x: hidden; /* so we could easily hide the radio inputs */
 	margin: 32px 0;
@@ -340,15 +347,19 @@ nav a:hover {
 	letter-spacing: 1px;
 	cursor: pointer;	
     transition: all 0.3s;
-    
+
 }
 .tab:hover label {
-	color: #333;
+    color: #333;
+}
+
+.tab:hover label span {
+    border-bottom: 0.1rem solid white;
 }
 
 .tab-content {
 	display: none;
-    color: #777;
+    color: var(--clr-light-text);
 }
 
 /* As we cannot replace the numbers with variables or calls to element properties, the number of this selector parts is our tab count limit */
@@ -384,7 +395,7 @@ nav a:hover {
     width: 100vw;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
     .tabbed__wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -422,11 +433,6 @@ nav a:hover {
     text-align: left;
 }
 
-@media (max-width: 500px) {
-    .tabbed__item {
-        display: block;
-    }
-}
 .tabbed__item img {
     align-self: start;
     max-width: 100%;
