@@ -351,7 +351,7 @@ nav a:hover {
     display: block;
     margin: 0 1.5vw -1px 1.5vw;
 	padding: 1.2vw 1.5vw;
-	color: #666;
+	color: #fff;
 	font-size: var(--font-size); 
 	font-weight: 600;
 	text-transform: uppercase;
@@ -361,18 +361,18 @@ nav a:hover {
 
 }
 
-.tab label span {
+/* .tab label span {
     border-bottom: 0.1rem solid #666;
     transition: all 0.2s ease-in-out;
-}
+} */
 .tab:hover label {
     color: #333;    
 }
 
-.tab:hover label span {
+/* .tab:hover label span {
     border-bottom: 0.1rem solid white;
     transition: all 0.2s ease-in-out;
-}
+} */
 
 .tab-content {
 	display: none;
