@@ -340,7 +340,7 @@ nav a:hover {
     padding: 0;
     border-bottom: 0.25rem solid var(--clr-highlight);
 
-    font-size: calc(--font-size--small * 16px);
+    font-size: calc(var(--font-size--small) * 1.5);
 }
 
 @media (max-width: 600px) {
