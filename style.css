@@ -418,19 +418,22 @@ nav a:hover {
 }
 
 .tabbed__wrapper {
-    margin: 2vh 0 0;
-    width: 100vw;
+    margin: 2vh auto;
+    width: 80vw;
 }
 
-.tabbed__wrapper p {
-    text-align: left;
-} 
 
-@media (min-width: 700px) {
-    .tabbed__wrapper {
-        width: calc(100vw - 40vw);
-        margin: 2vh auto 0 auto;
-    }
+
+.tabbed__wrapper .price,
+.tabbed__wrapper strong {
+    font-weight: 700;
+    color: var(--clr-highlight);
+}
+
+.tabbed__wrapper hr {
+    color: var(--clr-light-text);
+    opacity: 0.2;
+    margin: 2vh 0;
 }
 
 .tabbed-nav {
@@ -462,11 +465,13 @@ nav a:hover {
 .tabbed__prices > li {
     display: inline-block;
     margin-right: 1rem;
+    color: var(--clr-highlight);
+    font-weight: 700;
 }
 
 .tabbed__prices strong {
     font-weight: 700;
-    color: var(--clr-highlight);
+    color: var(--clr-light-text);
     margin-right: 1vw;
 }
 
