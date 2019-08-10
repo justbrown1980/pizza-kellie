@@ -64,3 +64,4 @@ typings/
 cms/
 
 .DS_Store
+*.zip
