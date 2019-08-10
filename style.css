@@ -494,6 +494,7 @@ nav a:hover {
 
 .menu__items p {
     margin-top: 0;
+    text-transform: capitalize;
 }
 
 @media (min-width: 800px) {
