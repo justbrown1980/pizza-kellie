@@ -94,6 +94,8 @@ body {
     margin: 0;
     padding: 0;
 
+    background-color: var(--clr-dark-bg);
+
 
   
 }
@@ -107,6 +109,16 @@ body {
 address {
     font-style: normal;
 } 
+
+address p strong {
+    display: block;
+}
+
+.phone a {
+    color: var(--clr-light-text);
+    font-weight: 700;
+
+}
 @media (min-width: 400px) {
     body{font-size: var(--font-size);}
 }
@@ -646,30 +658,24 @@ header[role="banner"] {
 
 /* Menu Page  */
 
+.menu__items {
+    margin: 5vh 0 10vh 0;
+}
+
 .menu__items p {
     margin-top: 0;
     text-transform: capitalize;
 }
 
-@media (min-width: 800px) {
-    .menu__items {
-        column-count: 2;
-        column-gap: 2em;
-    }
-}
-
-
-
-
-
 /* Footer  */
 
 [role="contentinfo"] {
+    text-transform: capitalize;
     text-align: center;
     background-color: var(--clr-highlight);
     color: var(--clr-light-text);
 
-    padding: 1vh 0;
+    padding: 3vh 0;
 }
 
 .footer-logo picture {

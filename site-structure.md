@@ -3,15 +3,15 @@
 1. Home -- DONE
 2. * Menu  --DONE
     1. * Pizzas
-        1. Traditional
-        2. Gourment Meat
-        3. Gourmet Seafood
-        4. Gourmet Veggie
-        5. Dessert
-    2. Turkish Pides
-    3. Gozleme
-    4. Kebabs
-    5. HSP
-    6. Special Deals
+        1. Traditional - traditional.html  --DONE
+        2. Gourmet Meat - gourmet-meat.html --DONE
+        3. Gourmet Seafood - gourmet-seafood.html --DONE
+        4. Gourmet Veggie - gourmet-veggie.html
+        5. Dessert - desserts.html
+    2. Turkish Pides - pides.html
+    3. Gozleme - gozleme.html
+    4. Kebabs - kebabs.html
+    5. HSP - hsp.html
+    6. Special Deals - specials.html
 
 
