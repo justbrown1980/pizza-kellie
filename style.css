@@ -345,6 +345,7 @@ header[role="banner"] {
   
     #menu .sub-menu li {
       width: auto;
+      border-bottom: 0;
     }
   }
   
