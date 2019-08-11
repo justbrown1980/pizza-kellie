@@ -19,14 +19,40 @@
                 </picture>
             </a>
 
-            <nav role="navigation">
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="menu.html">menu</a></li>
-                    <li><a href="menu.html#specials">special deals</a></li>
-                    <li><a href="contact.html">contact us</a></li>
+            <nav id="menu">
+                <label for="tm" id="toggle-menu">Navigation <span class="drop-icon">▾</span></label>
+                <input type="checkbox" id="tm">
+                <ul class="main-menu clearfix">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">Menu 
+                      <span class="drop-icon">▾</span>
+                      <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
+                    </a>
+                    <input type="checkbox" id="sm1">
+                    <ul class="sub-menu">
+                      <li><a href="#">Pizza
+                          <span class="drop-icon">▾</span>
+                          <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label>
+                        </a>
+                        <input type="checkbox" id="sm2">
+                        <ul class="sub-menu">
+                          <li><a href="#">Traditional</a></li>
+                          <li><a href="#">Gourmet Meat</a></li>
+                          <li><a href="#">Gourmet Seafood</a></li>
+                          <li><a href="#">Gourmet Veggie</a></li>
+                          <li><a href="#">Dessert</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="pides.html">Turkish Pides</a></li>
+                      <li><a href="pides.html">Gozleme</a></li>
+                      <li><a href="kebabs.html">Kebabs</a></li>
+                      <li><a href="hsp.html">HSP</a></li>
+                      <li><a href="specials.html">Special Deals</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Another menu item</a></li>
                 </ul>
-            </nav>
+              </nav>  <!-- end navigation -->
 
             <a href="tel:94321911" class="btn btn__outline">order now: 9421 1911</a>
 
@@ -205,6 +231,7 @@
                         <li><a href="menu.html#mains">Mains</a></li>
                         <li><a href="menu.html#sides">Sides</a></li>
                         <li><a href="menu.html#salads">Salads</a></li>
+                        <li><a href="menu.html#drinks">Drinks</a></li>
                     </ul>
 
                     <div class="tabbed__wrapper">
@@ -231,7 +258,7 @@
 
                                     <p><strong>Chips</strong> - Small <span class="price">$3.50</span>  Large <span class="price">$5</span></p>
                                     <p><strong>Wedges</strong> - Small <span class="price">$5</span>    Large <span class="price">$8</span></p>
-                                    <p><strong>Garlic Bread</strong> <span class="price">$3.50</span></p>
+                                    <p><strong>Garlic Bread</strong> -  <span class="price">$3.50</span></p>
 
                                 </div><!-- end menu__items-->
                         </div>
@@ -247,6 +274,23 @@
 
                                     <p><strong>Greek</strong> - mixed greens, onion, tomato, cucumber, olives, feta cheese, dressing</p>
                                     <p><strong>Italian</strong>- mixed greens, onion, capsicum, mushrooms, carrot, tomato, cucumber, olives, dressing</p>
+
+                                </div><!-- end menu items -->
+                        </div>
+
+                        <div id="drinks">
+                                <h3 class="tabbed__title">Drinks</h3>
+                                <p class="center">Drink SMALL <span class="price">$???</span> DRINK BIG <span class="price">$???</span></p>
+                                <br />
+
+                                <div class="menu__items">
+
+                                    <p><strong>DRINK NAME 1</strong> </p>
+                                    <p><strong>DRINK NAME 2</strong> </p>
+                                    <p><strong>DRINK NAME 3</strong> </p>
+                                    <p><strong>DRINK NAME 4</strong> </p>
+                                    <p><strong>DRINK NAME 5</strong> </p>
+                                    <p><strong>DRINK NAME 6</strong> </p>
 
                                 </div><!-- end menu items -->
                         </div>
@@ -323,10 +367,9 @@
                                 <br />
 
                                 <div class="menu__items"> 
-                                    <p><strong>1. Spinach</strong> - spinach, cheese</p>
-                                    <p><strong>2. Beef</strong> - beef,onion, cheese</p>
-                                    <p><strong>3. Chicken</strong> - chicken, mushrooms, cheese</p>
-                                    <p><strong>4. Mixed Vegetables</strong> - mixed vegetables, cheese</p>
+                                        <p><strong>1. Doner Kebab</strong> - lettuce, tomato, onion, sauce</p>
+                                        <p><strong>2. Chicken Kebab</strong> - lettuce, tomato, onion, sauce</p>
+                                        <p><strong>3. Falafel Kebab</strong> - lettuce, tomato, onion, sauce</p>
                                 </div><!-- end menu__items -->
     
                             </div><!-- end kebabs-->
@@ -358,7 +401,29 @@
                         </div><!-- end tabs kebabs-->
     
     
-                </div><!-- end tab-content Kebabs -->
+                </div><!-- end tab-content HSP -->
+
+                <div class="tab-content">
+
+                        <div class="tabbed__wrapper">
+                            <div id="kebabs">
+    
+                                <h3 class="tabbed__title">Special Deals</h3>
+
+                                <div class="menu__items"> 
+                                        <p><strong>Go and Blow</strong> 20 minute blowjob <strong>$60</strong></p>
+                                        <p><strong>Sucky Sucky Long Time</strong>  40 minute blowjob <strong>$100</strong></p>
+                                        <p><strong>Root and Boot</strong> Full 2 hour Blow and Boot <strong>$300</strong></p>
+                                </div><!-- end menu__items -->
+    
+                            </div><!-- end Special Deals-->
+    
+                            <hr />
+
+                        </div><!-- end tabs Special Deals-->
+    
+    
+                </div><!-- end tab-content HSP -->
 
 
 
@@ -393,7 +458,7 @@
         <p class="phone">
             <p>
                 <strong>phone:</strong>
-                0000 0000
+                9421 1911
             </p>
         </p>
     </aside>
