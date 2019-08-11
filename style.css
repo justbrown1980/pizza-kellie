@@ -10,6 +10,7 @@
 
 :root {
     --clr-highlight: #eb1c25;
+    --clr--highlight-light: #e73a42;
     --clr-dark-bg: rgba(0, 0, 0, 1);
     --clr-light-text: rgba(255, 255, 255, 1);
     --clr-dark-text: rgba(0, 0, 0, 1);
@@ -255,12 +256,12 @@ header[role="banner"] {
     display: none;
   }
   
-  /* #menu li, 
+/* #menu li, 
   #toggle-menu, 
   #menu .sub-menu {
     border-style: solid;
     border-color: rgba(0, 0, 0, .05);
-  } */
+  }  */
   
   #menu li, 
   #toggle-menu {
@@ -268,9 +269,10 @@ header[role="banner"] {
   }
   
   #menu .sub-menu {
-    background-color: var(--clr-highlight);
+    background-color: var(--clr--highlight-light);
     border-width: 1px 1px 0;
     margin: 0 1em;
+    
   }
   
   #menu .sub-menu li:last-child {
