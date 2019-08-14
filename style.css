@@ -144,7 +144,7 @@ img {
 /* Utility Clases */
 
 .center {
-    display: inline-block;
+    display: block;
     text-align: center;
     margin: 0 auto;
 }
@@ -692,16 +692,6 @@ header[role="banner"] {
     height: 100%;
     margin: 0 auto;
 }
-
-#traditional .menu__items,
-#gourmet-meat .menu__items,
-#gourmet-veggie .menu__items,
-#mains .menu__items,
-#sides .menu__items,
-#salads .menu__items {
-    columns: 1;
-} 
-
 
 @media screen and (min-width: 600px) {
     #traditional .menu__items,
