@@ -418,7 +418,7 @@ header[role="banner"] {
 
 /* Banner Area */
 [role="complementary"] {
-    background: #000 url(../images/pizza-bg-opt.jpg) no-repeat;
+    background: #000 url(images/pizza-bg-opt.jpg) no-repeat;
     background-size: cover;
 
     color: var(--clr-light-text);
@@ -660,22 +660,40 @@ header[role="banner"] {
 
 
 /* Food Grid */
-.food__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 1fr;
+@media (min-width: 600px) {
+    .food__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+        grid-gap: 1rem;
 
-    margin: 3rem 10vw 0 10vw;
+        margin: 3rem 10vw 0 10vw;
+    }
+}
+
+.food__grid img {
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 0;
+}
+.food__grid a {
+    text-decoration: none;
+}
+.food__grid p {
+    text-align: center;
+    color: var(--clr-light-text);
+    text-decoration: none;
 }
 
 
-
-.food__grid img {
-    width: 211px;
-    height: 158px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+#footer-tabs h4 {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    color: var(--clr-light-text);
+    border-top: 3px solid var(--clr-highlight);
 }
 
 /* Menu Page  */
@@ -712,31 +730,6 @@ header[role="banner"] {
     margin: 0 auto;
 }
 
-<<<<<<< HEAD
-#traditional .menu__items,
-#gourmet-meat .menu__items,
-#gourmet-veggie .menu__items,
-#mains .menu__items,
-#sides .menu__items,
-#salads .menu__items,
-#pides .menu__items,
-#gozleme .menu__items {
-    columns: 2;
-    column-gap: 2rem;
-} 
-
-
-
-
-#footer-tabs {
-    border-top: 4px solid var(--clr--highlight-light);
-}
-
-.footer__container {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-auto-rows: 1fr;
-=======
 @media screen and (min-width: 600px) {
     #traditional .menu__items,
     #gourmet-meat .menu__items,
@@ -753,7 +746,6 @@ header[role="banner"] {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr;
->>>>>>> d93daa44cfcc77e8d70de1661c17451257a66fdd
 
     color: var(--clr-light-text);
     }
@@ -761,9 +753,4 @@ header[role="banner"] {
 
 .footer__container a {
     color: var(--clr-light-text);
-}
-
-.is-underlined {
-    color: var(--clr-light-text);
-    border-bottom: 3px solid var(--clr-light-text);
 }
