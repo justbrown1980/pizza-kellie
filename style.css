@@ -661,11 +661,14 @@ header[role="banner"] {
 
 /* Food Grid */
 .food__grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
 }
 
-.food__grid picture {
-    object-fit: scale-down;
+.food__grid img {
+    width: 211px;
+    height: 158px;
 }
 
 /* Menu Page  */
