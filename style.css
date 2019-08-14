@@ -699,9 +699,21 @@ header[role="banner"] {
 #mains .menu__items,
 #sides .menu__items,
 #salads .menu__items {
-    columns: 2;
-    column-gap: 2rem;
+    columns: 1;
 } 
+
+
+@media screen and (min-width: 600px) {
+    #traditional .menu__items,
+    #gourmet-meat .menu__items,
+    #gourmet-veggie .menu__items,
+    #mains .menu__items,
+    #sides .menu__items,
+    #salads .menu__items {
+        columns: 2;
+        column-gap: 2rem;
+    } 
+}
 
 .footer__container {
    display: grid;
