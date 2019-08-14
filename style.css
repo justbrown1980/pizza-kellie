@@ -698,10 +698,19 @@ header[role="banner"] {
 #gourmet-veggie .menu__items,
 #mains .menu__items,
 #sides .menu__items,
-#salads .menu__items {
+#salads .menu__items,
+#pides .menu__items,
+#gozleme .menu__items {
     columns: 2;
     column-gap: 2rem;
 } 
+
+
+
+
+#footer-tabs {
+    border-top: 4px solid var(--clr--highlight-light);
+}
 
 .footer__container {
    display: grid;
@@ -713,4 +722,9 @@ header[role="banner"] {
 
 .footer__container a {
     color: var(--clr-light-text);
+}
+
+.is-underlined {
+    color: var(--clr-light-text);
+    border-bottom: 3px solid var(--clr-light-text);
 }
