@@ -659,6 +659,15 @@ header[role="banner"] {
 }
 
 
+/* Food Grid */
+.food__grid {
+    display: flex;
+}
+
+.food__grid picture {
+    object-fit: scale-down;
+}
+
 /* Menu Page  */
 
 .menu__items {
