@@ -659,6 +659,25 @@ header[role="banner"] {
 }
 
 
+/* Food Grid */
+.food__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+
+    margin: 3rem 10vw 0 10vw;
+}
+
+
+
+.food__grid img {
+    width: 211px;
+    height: 158px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
 /* Menu Page  */
 
 .menu__items {
@@ -693,6 +712,7 @@ header[role="banner"] {
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
 #traditional .menu__items,
 #gourmet-meat .menu__items,
 #gourmet-veggie .menu__items,
@@ -716,8 +736,27 @@ header[role="banner"] {
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-auto-rows: 1fr;
+=======
+@media screen and (min-width: 600px) {
+    #traditional .menu__items,
+    #gourmet-meat .menu__items,
+    #gourmet-veggie .menu__items,
+    #mains .menu__items,
+    #sides .menu__items,
+    #salads .menu__items {
+        columns: 2;
+        column-gap: 2rem;
+    } 
+}
+    @media screen and (min-width: 600px) {
+    .footer__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+>>>>>>> d93daa44cfcc77e8d70de1661c17451257a66fdd
 
-   color: var(--clr-light-text);
+    color: var(--clr-light-text);
+    }
 }
 
 .footer__container a {
